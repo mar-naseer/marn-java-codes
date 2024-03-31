@@ -1,0 +1,32 @@
+/*Aim: To write and Identify a number which has addition and multiplications of digits should be same*/
+/*it is also known as SPY NUMBER..lets see...*/
+
+/*If the addition of digit of a given number is equal to multiplication of each digit of a given number is called spy number.*/
+Example1
+132
+Spy number
+Example2
+675
+Not a spy number.
+*/
+
+import java.io.*;
+import java.util.*;
+class Test{
+    public static void main (String args[]){
+        int n;
+        int p=1,s=0,id;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        while(n>0){
+            id=n%10;
+            s=s+id;
+            p=p*id;
+            n=n/10;
+        }
+        if(s==p)
+        System.out.println("Spy number");
+        else
+        System.out.println("Not a Spy number.");
+    }
+}
