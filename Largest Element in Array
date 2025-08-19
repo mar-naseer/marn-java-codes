@@ -1,0 +1,24 @@
+Java Program to Find the Largest Element in Array
+
+public class LargestElement {
+    public static int findLargest(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("Array cannot be null or empty.");
+        }
+
+        int maxElement = arr[0]; // Assume the first element is the largest initially
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > maxElement) {
+                maxElement = arr[i]; // Update maxElement if a larger element is found
+            }
+        }
+        return maxElement;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {10, 5, 20, 8, 15};
+        int largest = findLargest(numbers);
+        System.out.println("The largest element is: " + largest); // Output: 20
+    }
+}
