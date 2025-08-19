@@ -1,0 +1,43 @@
+Java Program to Add Elements in an Array.
+
+There are two different approaches we can use to add an element to an Array. The approaches are listed below:
+
+- Adding an Element Using a new Array
+- Using ArrayList as Intermediate Storage
+
+// Java Program to add an element 
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+ 
+class Geeks {
+ 
+   public static int[] addX(int n, int arr[], int x)
+   {
+
+       int newarr[] = new int[n + 1];
+ 
+       // insert the elements from
+       // the old array into the new array
+       // insert all elements till n
+       // then insert x at n+1
+       for (int i = 0; i < n; i++)
+           newarr[i] = arr[i];
+ 
+       newarr[n] = x;
+ 
+       return newarr;
+   }
+
+   public static void main(String[] args)
+   {
+     
+       int n = 5;
+       int arr[] = { 10, 20, 30, 40, 50};
+       int x = 70;
+ 
+       arr = addX(n, arr, x);
+ 
+       System.out.println(Arrays.toString(arr));
+   }
+}
