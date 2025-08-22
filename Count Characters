@@ -1,0 +1,11 @@
+Count Frequency of Characters
+
+public class CharFrequency {
+    public static Map<Character, Integer> countFreq(String input) {
+        Map<Character, Integer> freqMap = new HashMap<>();
+        for (char c : input.toCharArray()) {
+            freqMap.put(c, freqMap.getOrDefault(c, 0) + 1);
+        }
+        return freqMap;
+    }
+}
