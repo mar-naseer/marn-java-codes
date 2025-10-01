@@ -1,0 +1,137 @@
+Write a Java program to create a class called "Library" with a collection of books and methods to add and remove books.
+
+Sample Output:
+
+Books in the library:
+Adventures of Tom Sawyer by Mark Twain
+Ben Hur by Lewis Wallace
+Time Machine by H.G. Wells
+Anna Karenina by Leo Tolstoy
+
+Books in the library after removing Ben Hur:
+Adventures of Tom Sawyer by Mark Twain
+Time Machine by H.G. Wells
+Anna Karenina by Leo Tolstoy
+____________________________________________________________________________________________________________________________________________
+
+// Book.java
+// Define the Book class
+public class Book {
+  // Private field to store the title of the book
+  private String title;
+  // Private field to store the author of the book
+  private String author;
+
+  // Constructor to initialize the title and author fields
+  public Book(String title, String author) {
+    // Assign the title parameter to the title field
+    this.title = title;
+    // Assign the author parameter to the author field
+    this.author = author;
+  }
+
+  // Getter method for the title field
+  public String getTitle() {
+    // Return the value of the title field
+    return title;
+  }
+
+  // Setter method for the title field
+  public void setTitle(String title) {
+    // Assign the title parameter to the title field
+    this.title = title;
+  }
+
+  // Getter method for the author field
+  public String getAuthor() {
+    // Return the value of the author field
+    return author;
+  }
+
+  // Setter method for the author field
+  public void setAuthor(String author) {
+    // Assign the author parameter to the author field
+    this.author = author;
+  }
+} 
+The above class has two private attributes, "title" and "author". It has a constructor that takes two arguments, the title and author of the book, and initializes the corresponding attributes. 
+It also has getter and setter methods to access and modify the title and author attributes.
+------------------------------------------------------------
+// Library.java
+// Import the ArrayList class from the java.util package
+import java.util.ArrayList;
+
+// Define the Library class
+public class Library {
+  // Private field to store a list of Book objects
+  private ArrayList<Book> books;
+
+  // Constructor to initialize the books field
+  public Library() {
+    // Create a new ArrayList to hold Book objects
+    books = new ArrayList<Book>();
+  }
+
+  // Method to add a Book to the books list
+  public void addBook(Book book) {
+    // Add the specified book to the books list
+    books.add(book);
+  }
+
+  // Method to remove a Book from the books list
+  public void removeBook(Book book) {
+    // Remove the specified book from the books list
+    books.remove(book);
+  }
+
+  // Method to get the list of books
+  public ArrayList<Book> getBooks() {
+    // Return the list of books
+    return books;
+  }
+}
+The above "Library" class has a private books attribute, which is an ArrayList of Book objects. The Library constructor initializes this attribute as an empty list. 
+The "addBook()" method adds a Book object to the books list, while the “removeBook()” method removes a Book object from the list. The “getBooks()” method returns the books list.
+----------------------------------------------------------------
+// Main.java
+
+// Define the Main class
+public class Main {
+  // Main method, entry point of the program
+  public static void main(String[] args) {
+    // Create a new instance of the Library class
+    Library library = new Library();
+
+    // Create new Book objects with title and author
+    Book book1 = new Book("Adventures of Tom Sawyer", "Mark Twain");
+    Book book2 = new Book("Ben Hur", "Lewis Wallace");
+    Book book3 = new Book("Time Machine", "H.G. Wells");
+    Book book4 = new Book("Anna Karenina", "Leo Tolstoy");
+
+    // Add the books to the library
+    library.addBook(book1);
+    library.addBook(book2);
+    library.addBook(book3);
+    library.addBook(book4);
+
+    // Print a message to indicate the books in the library
+    System.out.println("Books in the library:");
+    // Iterate through the list of books in the library
+    for (Book book : library.getBooks()) {
+      // Print the title and author of each book
+      System.out.println(book.getTitle() + " by " + book.getAuthor());
+    }
+
+    // Remove a book from the library
+    library.removeBook(book2);
+    // Print a message to indicate the books in the library after removal
+    System.out.println("\nBooks in the library after removing " + book2.getTitle() + ":");
+    // Iterate through the updated list of books in the library
+    for (Book book : library.getBooks()) {
+      // Print the title and author of each book
+      System.out.println(book.getTitle() + " by " + book.getAuthor());
+    }
+  }
+} 
+In the above class, we create an instance of the Library class and add two Book objects to the collection using the “addBook()” method. We then display the books in the library using the “displayBooks()” method. 
+We remove one of the books using the “removeBook()” method and display the updated collection of books in the library
