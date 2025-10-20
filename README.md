@@ -7,7 +7,7 @@ Lets Bring it on!!
 
 
 
-pls do add if u solve anything Crazyy!
+also, pls do add if u solve anything Crazyy!
 
 
 
