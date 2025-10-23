@@ -1,4 +1,4 @@
-Count Frequency of Characters
+Count Frequency of Characters given
 
 public class CharFrequency {
     public static Map<Character, Integer> countFreq(String input) {
