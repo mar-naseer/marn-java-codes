@@ -8,6 +8,7 @@ x1,y1,x2,y2,x3,y3,xp,yp separated by a single space.
 // Importing the necessary Java utility package
 import java.util.*;
 
+
 // Main class named "Main"
 public class Main { 
     // Method to calculate the outer product of vectors (x1, y1) and (x2, y2) with respect to point (x, y)
