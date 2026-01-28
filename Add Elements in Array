@@ -9,7 +9,8 @@ There are two different approaches we can use to add an element to an Array. The
 import java.io.*;
 import java.lang.*;
 import java.util.*;
- 
+
+
 class Geeks {
  
    public static int[] addX(int n, int arr[], int x)
