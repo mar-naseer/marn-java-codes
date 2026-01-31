@@ -29,6 +29,7 @@ public class Exercise15 {
                 // Check if elements in array1 and array2 are equal.
                 if (array1[i] == (array2[j])) {
                     // Print the common element.
+
                     System.out.println("Common element is : " + (array1[i]));
                 }
             }
