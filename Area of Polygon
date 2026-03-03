@@ -25,6 +25,7 @@ public class Main{
         return (ns *(side*side)) / (4.0 * Math.tan((Math.PI/ns)));
     }
 }
+
 Sample Output:
 
 Input the number of sides on the polygon: 7                                                                   
