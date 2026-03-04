@@ -1,5 +1,7 @@
 Count Frequency of Characters given
 
+code =
+
 public class CharFrequency {
     public static Map<Character, Integer> countFreq(String input) {
         Map<Character, Integer> freqMap = new HashMap<>();
@@ -9,3 +11,5 @@ public class CharFrequency {
         return freqMap;
     }
 }
+
+
