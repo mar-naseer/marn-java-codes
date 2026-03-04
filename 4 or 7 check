@@ -2,6 +2,7 @@ Contains 4 or 7!
 
 Write a Java program to test that a given array of integers of length 2 contains a 4 or a 7.
 
+
 Sample Output:
 
 Original Array: [5, 7]                                                 
