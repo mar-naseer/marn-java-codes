@@ -2,7 +2,7 @@ Convert an array to ArrayList
 
 Sample Output:
 
-[Python, JAVA, PHP, Perl, C#, C++] = Java
+[Python, JAVA, PHP, Perl, C#, C++] 
 ________________________________________________________________________________
 // Import the ArrayList and Arrays classes from the Java utility library.
 import java.util.ArrayList;
