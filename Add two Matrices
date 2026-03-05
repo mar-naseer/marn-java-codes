@@ -8,7 +8,6 @@ public class Geeks {
         int A[][] = { { 1, 2 }, { 3, 4 } };
         int B[][] = { { 1, 1 }, { 1, 1 } };
 
-
         // Dimensions of the matrix
         int rows = A.length;
         int cols = A[0].length;
