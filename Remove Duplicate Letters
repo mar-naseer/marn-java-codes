@@ -45,6 +45,7 @@ public class Main {
             stack.push(c);
             inResult[c - 'a'] = true;
         }
+
         // Sort the characters in the stack
         Collections.sort(stack);
         // Build the result string from the characters in the stack
