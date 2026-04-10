@@ -5,6 +5,7 @@ Sample Output:
 Original string: zxywooxz
 After removing duplicate characters and arranging in lexicographical order: owxyz
 
+
 // Import Scanner class from java.util package for user input
 import java.util.*;
 // Main class for the solution
